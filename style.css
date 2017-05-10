@@ -1,76 +1,102 @@
 body {
-	margin: 0;
-	background-image: url("background.jpg");
-	font-family: Georgia;
-	background-size: cover;
+    margin: 0;
+    background-image: url("background.jpg");
+    font-family: Georgia;
+    background-size: cover;
 }
 
-h1, h2.logotext{
-	color: white;
-
+h1, h2.logo-text {
+    color: white;
 }
-header{
-	height:30px;
-	background-color:orange;                          
-	}
+
+header {
+    height: 30px;
+    background-color: orange;
+}
 
 div.logo {
-	background-image: url("logo.jpg");
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-	height: 150px;
-	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-
-
+    background-image: url("logo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }	
 
-nav
-{ 
-	margin-right: auto;
-	margin-left: auto;
-	width: 775px;
-	height:30px;
-	background-color:orange;
-	font-weight: bold;
-	font-size:12px;
-	padding:17px 0 3px 25px;
+nav { 
+   margin-right: auto;
+   margin-left: auto;
+   width: 775px;
+   height: 50px;
+   background-color: orange;
+   padding: 17px 0 3px 25px;
 }
-
 
 div.wrapper {
-	background-color: grey;
-	float: inherit;
-	width: 800px;
-	position: relative;
-	margin: auto;
-
+   background-color: grey;
+   float: inherit;
+   width: 800px;
+   position: relative;
+   margin: auto;
 }
 
-aside{
-	float:right;
-	width:170px;
-	background-color:#666;
-	font-size:12px;
-	padding:25px 15px 10px 15px;
-	line-height:16px;
-
+aside {
+    float: right;
+    width: 170px;
+    background-color: #666;
+    font-size: 12px;
+    padding: 25px 15px 10px 15px;
+    line-height: 16px;
 }
 section {
-	padding: 20px;
-
+    padding: 20px;
 }
 
-#footer{
-	text-align: center;
-	margin: auto;
-	width:775px;
-	height:30px;
-	background-color:orange;
-	font-size:12px;
-	color:#333;
-	padding:20px 0 0 25px;
+#footer {
+    text-align: center;
+    margin: auto;
+    width: 775px;
+    height: 30px;
+    background-color: orange;
+    font-size: 12px;
+    color: #333;
+    padding: 20px 0 0 25px;
+}
+
+.menu-button {
+    background-color: grey;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px 10px 5px 10px;
+    background: linear-gradient(grey, orange);
+}
+
+a.button-text {
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+}
+
+#menu-button-last {
+    background-color: grey;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px 10px 5px 10px;
+    background: linear-gradient(grey, orange);
+    -ms-transform: rotate(7deg); 
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
 }
