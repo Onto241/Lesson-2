@@ -1,0 +1,35 @@
+#reg-container {
+    background-color: dimgrey;
+    height: 300px;
+    width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.success {
+    font-size: 36px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.error {
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 200px;
+    background-color: red;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+input.valid {
+    border-color: green;
+}
