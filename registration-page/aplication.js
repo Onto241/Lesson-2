@@ -17,6 +17,7 @@ $(document).ready(function() {
         }
         else {
             $("#email").addClass("valid");
+            $("#email").removeClass("invalid");
         }
         if (password=="") {
             $("#password").addClass("invalid");
@@ -24,6 +25,7 @@ $(document).ready(function() {
         }
         else {
             $("#password").addClass("valid");
+             $("#password").removeClass("invalid");
         }
         if ($("#email").hasClass("valid"))
             if ($("#name").hasClass("valid"))
