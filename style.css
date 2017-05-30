@@ -100,3 +100,73 @@ a.button-text {
     -webkit-transform: rotate(7deg);
     transform: rotate(7deg);
 }
+
+/* Small devices (phones) */
+
+@media (max-width : 767px) {
+    div.logo {
+        width: 325px;
+    }
+    nav {
+        width: 300px;
+        height: 150px;
+    }
+    div.wrapper {
+        width: 325px;
+    } 
+    aside {
+        width: 100px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    img {
+        width: 100px;
+    }
+    #footer {
+        display: none;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div.logo {
+        width: 740px;
+    }
+    nav {
+        width: 715px;
+    }
+    div.wrapper {
+        width: 740px;
+    }
+    #footer {
+        width: 715px;
+    }
+}
+
+/* large desktops and up */
+
+@media (min-width: 1200px) {
+    div.logo {
+        width: 1200px;
+    }
+    nav {
+        width: 1175px;
+    }
+    div.wrapper {
+        width: 1200px;
+    }
+    #footer {
+        width: 1175px;
+    }
+    aside {
+        width: 200px;
+        font-size: 15px;
+    }
+    section {
+        display: inline-block;
+    }
+    img {
+        width: 400px;
+    }
+}

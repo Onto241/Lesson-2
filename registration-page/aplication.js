@@ -1,39 +1,42 @@
 $(document).ready(function() {
     $("#register-button").click(function() {
-        var name = $("#name").val();
-        var email = $("#email").val();
-        var password = $("#password").val();
-        if (name=="") {
-            $("#name").addClass("invalid");
+        var $name = $("#name");
+        var $email = $("#email");
+        var $password = $("#password");
+        if ($name.val()==="") {
+            $name.removeClass("valid"); 
+            $name.addClass('invalid');
             $(".error").show();
         }
         else {
-            $("#name").addClass("valid");
-            $("#name").removeClass("invalid");
+            $name.val(); 
+            $name.addClass("valid"); 
         }
-        if (email=="") {
-            $("#email").addClass("invalid");
+       
+        if ($email.val()==="") {
+            $email.removeClass("valid"); 
+            $email.addClass("invalid");
             $(".error").show();
         }
         else {
-            $("#email").addClass("valid");
-            $("#email").removeClass("invalid");
+            $email.val();
+            $email.addClass("valid");
+            
         }
-        if (password=="") {
-            $("#password").addClass("invalid");
+        if ($password.val()==="") {
+            $password.removeClass("valid"); 
+            $password.addClass("invalid");
             $(".error").show();
         }
         else {
-            $("#password").addClass("valid");
-             $("#password").removeClass("invalid");
+            $name.val();
+            $password.addClass("valid");
+            
         }
-        if ($("#email").hasClass("valid"))
-            if ($("#name").hasClass("valid"))
-                if ($("#password").hasClass("valid"))
-                {
-                    $("#reg-container").hide();
-                    $(".success").show();
-                    $(".error").hide();
-                }
+        if($email.hasClass("valid") && $name.hasClass("valid") && $password.hasClass("valid")) {
+            $("#reg-container").hide();
+            $(".success").show();
+            $(".error").hide();
+        }
     });
 });
