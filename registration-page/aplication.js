@@ -6,22 +6,17 @@ $(document).ready(function() {
         if ($name.val()==="") {
             $name.removeClass("valid"); 
             $name.addClass('invalid');
-            $(".error").show();
         }
         else {
-            $name.val(); 
             $name.addClass("valid"); 
         }
-       
         if ($email.val()==="") {
             $email.removeClass("valid"); 
             $email.addClass("invalid");
             $(".error").show();
         }
         else {
-            $email.val();
             $email.addClass("valid");
-            
         }
         if ($password.val()==="") {
             $password.removeClass("valid"); 
@@ -29,9 +24,7 @@ $(document).ready(function() {
             $(".error").show();
         }
         else {
-            $name.val();
             $password.addClass("valid");
-            
         }
         if($email.hasClass("valid") && $name.hasClass("valid") && $password.hasClass("valid")) {
             $("#reg-container").hide();
